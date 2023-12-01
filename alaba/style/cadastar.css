@@ -1,0 +1,154 @@
+body {
+  background-color: #0f172a;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 8em;
+}
+
+.logo > figure {
+  background-color: #131c2f;
+  text-align: center;
+  padding: 0.7em 0.8em;
+  border-radius: 10px;
+}
+
+.logo > h1 {
+  color: white;
+  font-size: 3em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%, -50%);
+  padding: 0.5em;
+}
+
+form > .single-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2em;
+  text-align: center;
+}
+
+form > .single-input > label {
+  padding-bottom: 0.8em;
+  color: white;
+  opacity: 0.9;
+  color: #fff;
+  text-align: left;
+}
+
+form > .single-input > label > span {
+    color: red;
+}
+form > .single-input > input {
+  width: 94%;
+  padding: 1em 1em;
+  border-radius: 5px;
+  background-color: #1e293b;
+  outline: none;
+  border: 0px;
+  color: white;
+  transition: 1s;
+  border: 2px solid transparent;
+}
+
+form > .single-input > span {
+  padding: 1em 0em;
+  font-size: 1.2em;
+  color: white;
+  opacity: 0.7;
+}
+
+form > .single-input > span > a {
+  color: #9735f3;
+  text-decoration: none;
+}
+
+form > .single-input > span:hover {
+  opacity: 1;
+}
+
+form > .single-input > input:hover {
+  border: 2px solid #a855f7;
+}
+
+form > .single-input > input:focus {
+  border: 2px solid #a855f7;
+}
+
+form > .single-input > button {
+  padding: 0.7em;
+  border-radius: 30px;
+  background-color: #a855f7;
+  color: white;
+  outline: none;
+  font-size: 1.1em;
+  transition: 1s;
+  cursor: pointer;
+}
+
+form > .single-input > button:hover {
+  background-color: #9735f3;
+}
+
+form > .outros {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+form > .outros > .or {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form > .outros > .or > .barra {
+  width: 45%;
+  height: 0.5px;
+  background-color: rebeccapurple;
+}
+
+form > .outros > .or > p {
+  padding: 0em 0.8em;
+  opacity: 0.7;
+  color: white;
+}
+
+form > .outros > .buttons-login {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form > .outros > .buttons-login button {
+  width: 45%;
+  border-radius: 30px;
+  padding: 0.5em 1em;
+  background-color: #1e293b;
+  color: white;
+  font-size: 1.2em;
+  border: 0px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 1s;
+}
+
+form > .outros > .buttons-login button:hover {
+  opacity: 1;
+}

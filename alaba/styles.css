@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+  }
+  
+  /* Create particles using pseudo-elements */
+  .particles::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: moveParticle linear infinite;
+  }
+  
+  @keyframes moveParticle {
+    0% {
+      transform: translate(calc(100vw * var(--x)), calc(100vh * var(--y)));
+    }
+    100% {
+      transform: translate(calc(100vw * var(--x) + 50vw), calc(100vh * var(--y) - 50vh));
+    }
+  }
+  
+  /* Set random values for each particle */
+  .particles::before {
+    --x: random();
+    --y: random();
+  }
+  
+  /* Generate multiple particles using JavaScript */
+  .particles::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: moveParticle linear infinite, fadeInOut 3s linear infinite;
+  }
+  
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  /* Set random values for each particle */
+  .particles::before {
+    --x: random();
+    --y: random();
+  }
+  
